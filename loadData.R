@@ -19,3 +19,12 @@ data_2006 <- data_2006[data_2006$UniqueCarrier == "AA", ]
 #   7003802   na.omit
 #    360055   ORD - Origin
 #     74753   AA - UniqueCarrier
+
+DT2006$CancellationCode <- NULL
+DT2006$TailNum <- NULL
+DT2006$TaxiIn <- NULL
+DT2006$TaxiOut <- NULL
+DT2006$Diverted <- NULL
+DT2006$Cancelled <- NULL
+DT2006$ActualElapsedTime <- NULL
+DT2006$CRSElapsedTime <- NULL
