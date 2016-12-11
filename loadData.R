@@ -19,6 +19,7 @@ data_2006 <- data_2006[data_2006$UniqueCarrier == "AA", ]
 #   7003802   na.omit
 #    360055   ORD - Origin
 #     74753   AA - UniqueCarrier
+<<<<<<< HEAD
 
 data_2007$UniqueCarrier <- NULL
 data_2007$TailNum <- NULL
@@ -29,3 +30,5 @@ data_2007$Diverted <- NULL
 library("data.table")
 DT2007 <- data.table(data_2007)
 DT2006 <- data.table(data_2006)
+=======
+>>>>>>> 330c38c3da32157bfbb7ada04cfb29bf8de9de27
