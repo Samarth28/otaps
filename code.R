@@ -13,6 +13,7 @@ data2<-subset(data2, select = -c(Year,ActualElapsedTime,CRSElapsedTime,AirTime,T
 sample_data<-rbind(data1,data2)
 
 #training and testing data
+
 split<-sample.split(sample_data$Status,SplitRatio=0.6)
 train <- subset(sample_data, split == TRUE)
 test <- subset(sample_data, split == FALSE)
